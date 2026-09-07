@@ -17,4 +17,4 @@ int main()
         printf("Scalene\n");
 
     return 0;
-}
+ }
