@@ -1,0 +1,29 @@
+//Day 34 - Q1
+//Insert an element in an array at a given position.
+#include <stdio.h>
+
+int main() {
+    int n, i, value, position;
+    int arr[101];
+
+    scanf("%d", &n);
+
+    for (i = 0; i < n; i++) {
+        scanf("%d", &arr[i]);
+    }
+
+    scanf("%d", &position);
+    scanf("%d", &value);
+
+    for (i = n; i > position; i--) {
+        arr[i] = arr[i - 1];
+    }
+
+    arr[position] = value;
+
+    for (i = 0; i <= n; i++) {
+        printf("%d ", arr[i]);
+    }
+
+    return 0;
+}
